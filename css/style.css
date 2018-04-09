@@ -136,7 +136,7 @@ input {
     opacity: 0.1;
 }
 
-.footer__work__img:hover .img-area,
+.footer__img:hover .img-area,
 .sub__area:hover .img-area,
 .main__area:hover .img-area {
     opacity: 1;
@@ -175,6 +175,8 @@ ul.header__top__info li {
 .header__top__info__link {
     font-size: 12px;
     padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .header__top__info__link.is__mail { background-image: url("../img/header/icon-mail-off.png")}
@@ -186,11 +188,6 @@ ul.header__top__info li {
 .header__top__info__link {
     width: 13px;
     height: 11px;
-}
-
-.header__top__info__link {
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 .header__top__sns {
@@ -254,7 +251,6 @@ ul.header__top__sns li {
 
 .header__main {
     text-align: center;
-    height: 100%;
 }
 
 div.header__main .inner {
@@ -388,7 +384,7 @@ div.description li:first-child {
 
 .main__txt-area {
     width: 570px;
-    height: 100px;
+    padding: 30px 0;
     background-color: #fff;
     display: table;
 }
@@ -525,22 +521,21 @@ div.footer__main p {
     margin-top: 5px;
 }
 
-.footer__caption__info.is__address:before { content: url("../img/footer/icon-address-off.png");}
-.footer__caption__info.is__address:hover:before { content: url(../img/footer/icon-address-on.png);}
+.footer__caption__info.is__address { background-image: url("../img/footer/icon-address-off.png");}
+.footer__caption__info.is__address:hover { background-image: url(../img/footer/icon-address-on.png);}
 
-.footer__caption__info.is__tel:before { content: url("../img/footer/icon-tel-off.png");}
-.footer__caption__info.is__tel:hover:before { content: url(../img/footer/icon-tel-on.png);}
+.footer__caption__info.is__tel { background-image: url("../img/footer/icon-tel-off.png");}
+.footer__caption__info.is__tel:hover { background-image: url(../img/footer/icon-tel-on.png);}
 
-.footer__caption__info.is__mail:before { content: url("../img/footer/icon-mail-off.png");}
-.footer__caption__info.is__mail:hover:before { content: url(../img/footer/icon-mail-on.png);}
+.footer__caption__info.is__mail { background-image: url("../img/footer/icon-mail-off.png");}
+.footer__caption__info.is__mail:hover { background-image: url(../img/footer/icon-mail-on.png);}
 
-.footer__caption__info.is__address:before,
-.footer__caption__info.is__tell:before,
-.footer__caption__info.is__mail:before {
+.footer__caption__info {
     width: 13px;
     height: 11px;
-    margin-right: 7px;
-    vertical-align: middle;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .footer__main__form {
